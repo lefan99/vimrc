@@ -17,6 +17,15 @@ syntax enable
 set autoindent
 set smartindent
 
+"find indent rules for filetype
+if has('filetype')
+  filetype indent plugin on
+endif
+
+
+"display cursor position
+set ruler 
+
 "allows switching between files in vim (using :e) without saving. Buffers the changes
 set hidden
 
@@ -33,6 +42,13 @@ set showcmd
 
 set hlsearch
 
+
+"set cmd window height to 2 lines
+
+set cmdheight=2
+
+"replace sound by visual indicator 
+set visualbell
 
 
 
